@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Mortgage repayment calculator</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="form--section">
+        <header class="header">
+          <h1 class="heading">Mortgage Calculator</h1>
+          <button class="clear--all">Clear all</button>
+        </header>
+        <div class="form--container">
+          <form>
+            <div class="input--container">
+              <label for="mortgage--amount">Mortgage Amount</label>
+              <div>
+                <div>&#8356;</div>
+                <input type="number" id="mortgage--amount" />
+              </div>
+            </div>
+            <div class="term--input--container">
+              <div class="input--container">
+                <label for="mortgage--term">Mortgage Term</label>
+                <div>
+                  <input type="number" id="mortgage--term" />
+                  <div>years</div>
+                </div>
+              </div>
+              <div class="input--container">
+                <label for="interest--rate">Interest Rate</label>
+                <div>
+                  <input type="number" id="interest--rate" />
+                  <div>&#37;</div>
+                </div>
+              </div>
+            </div>
+            <div class="mortgage-type-input">
+              <p>Mortgage Type</p>
+              <div>
+                <label for="repayment">
+                  <input
+                    type="checkbox"
+                    id="repayment"
+                    class="circle--checkbox"
+                  />
+                  <span class="circle"></span> Repayment
+                </label>
+                <label for="interest">
+                  <input
+                    type="checkbox"
+                    id="interest"
+                    class="circle--checkbox"
+                  />
+                  <span class="circle"></span> Interest Only
+                </label>
+              </div>
+            </div>
+            <button class="button--container">
+              <img src="assets/images/icon-calculator.svg" alt="calculator" />
+              <p>Calculate Repayments</p>
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="result-section">
+        <div class="empty--container">
+          <img src="assets/images/illustration-empty.svg" alt="img" />
+          <h2>Results shown here</h2>
+          <p>
+            Complete the form and click "calculate repayments" to see what your
+            monthly repayments would be.
+          </p>
+        </div>
+        <div class="result--container hidden">
+          <h2 class="heading--result">Your results</h2>
+          <p>
+            Your results are shown below based on the information you provided.
+            To adjust the results, edit the form and click “calculate
+            repayments” again.
+          </p>
+          <div class="results">
+            <p>Your monthly repayments</p>
+            <div class="monthly--result">
+              <div>
+                <span>&#8356;</span>
+                <p class="monthly--display">0.00</p>
+              </div>
+            </div>
+
+            <div class="total--result">
+              <p>Total you'll repay over the term</p>
+              <div>
+                <span>&#8356;</span>
+                <p class="total--display">00.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
